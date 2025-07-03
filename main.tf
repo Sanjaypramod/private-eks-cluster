@@ -38,3 +38,16 @@ module "bastionhost" {
   subnet_id = module.vpc.aws_public_subnet
   ami_id = var.ami_id
   }
+
+# module "backend_ecr" {
+#   source = "./modules/ecr"
+#   name   = var.backend_repository_name
+# }
+
+# module "frontend_ecr" {
+#   source = "./modules/ecr"
+#   name   = var.frontend_repository_name
+# }
+
+
+

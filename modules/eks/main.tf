@@ -153,7 +153,7 @@ resource "aws_iam_role_policy_attachment" "cloudquick-AmazonDynamoDBFullAccess" 
 resource "aws_eks_addon" "ebs_csi" {
   cluster_name      = aws_eks_cluster.cloudquick.name
   addon_name        = "aws-ebs-csi-driver"
-  addon_version     = "v1.27.0-eksbuild.1"  # Specify the version you want to use. Check the latest compatible version with your EKS.
+  addon_version     = "v1.45.0-eksbuild.2"  # Specify the version you want to use. Check the latest compatible version with your EKS.
   resolve_conflicts_on_create = "OVERWRITE"
   resolve_conflicts_on_update = "OVERWRITE"
 
