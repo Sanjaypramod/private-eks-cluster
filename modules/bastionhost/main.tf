@@ -36,7 +36,7 @@ resource "aws_instance" "bastion_host" {
   ]
 
   tags = {
-    Name = "Bastion Host Vishnu"
+    Name = "Bastion Host sanjay"
   }
 }
 
